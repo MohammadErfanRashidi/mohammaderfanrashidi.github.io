@@ -1,38 +1,37 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "Mohammad Erfan Rashidi",
+  title: "Junior Data Scientist",
+  description: "Portfolio website of Mohammad Erfan Rashidi",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "mohammaderfanrashidi@gmail.com",
+    linkedin: "www.linkedin.com/in/mohammad-erfan-rashidi-4a50b0284",
+    github: "https://github.com/MohammadErfanRashidi",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "Data scientist who builds end‑to‑end machine learning solutions—from rigorous data cleaning and feature engineering to deploying interactive web apps (Streamlit & FastAPI)—spanning classification, clustering, and regression problems.",
+  skills: ["Python", "SQL", "Data-Cleaning", "ML", "PowerBI", "MLOps"],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Bank Term Deposit Subscription Prediction",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
+        "Predicted term deposit subscriptions from bank marketing data using a Random Forest and deployed an interactive Streamlit web app.",
       link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["Classification", "Random-Forest", "Feature-Engineering", "GridSearchCV", "MLOps"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "Customer Segmentation with K-Means Clustering",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
+        "Segmented credit card customers into five behavioral clusters with K-Means and deployed a Streamlit app that classifies new customers and recommends business strategies.",
       link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["Clustering", "K-means", "KPI", "EDA", "Web-application"],
     },
     {
-      name: "ExtensionKit",
+      name: "Life Expectancy Predictor",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
+        "Built a high‑accuracy Random Forest regressor to predict life expectancy from health and socioeconomic indicators, served via a FastAPI web app.",
       link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["Regression", "Random-Forest", "FastAPI", "SQL", "VIF"],
     },
   ],
   experience: [
