@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   aboutMe:
     "Data scientist who builds end‑to‑end machine learning solutions—from rigorous data cleaning and feature engineering to deploying interactive web apps (Streamlit & FastAPI)—spanning classification, clustering, and regression problems.",
-  skills: ["Python", "SQL", "Data-Cleaning", "ML", "PowerBI", "MLOps"],
+  skills: ["Data Science (DS)", "Machine Learning (ML)", "Deep Learning (DL)", "Business Intelligence (BI)", "Natural Language Processing (NLP)"],
   projects: [
     {
       name: "Bank Term Deposit Subscription Prediction",
@@ -31,60 +31,61 @@ export const siteConfig = {
       description:
         "Built a high‑accuracy Random Forest regressor to predict life expectancy from health and socioeconomic indicators, served via a FastAPI web app.",
       link: "https://github.com/MohammadErfanRashidi/Life-Expectancy-",
-      skills: ["Regression", "Random-Forest", "FastAPI", "SQL", "VIF"],
+      skills: ["Regression", "REST", "FastAPI", "SQL", "VIF"],
     },
   ],
-  experience: [
-    {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
-      bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
-    },
-  ],
+  certificates: [
+  {
+    title: "Google Advanced Data Analytics Professional Certificate",
+    issuer: "Google",
+    logo: "/logos/images.png",        
+    description: "End-to-end data analysis with Python, statistics, machine learning, and data storytelling.",
+    skills: ["Python", "Data Cleaning", "Exploratory Data Analysis (EDA)", "Regression", "Classification"],
+    link: "https://www.credly.com/badges/ac571f08-0daa-4c01-bf46-2e230d1710f7/linked_in_profile",
+  },
+  {
+    title: "Google Business Intelligence Professional Certificate",
+    issuer: "Google",
+    logo: "/logos/images.png",
+    description: "Data transformation, pipeline creation, and dashboard design for business decision-making.",
+    skills: ["SQL", "BigQuery", "Data Modeling", "ETL", "Tableau"],
+    link: "https://www.coursera.org/account/accomplishments/specialization/S1AMNZ4HM04C",
+  },
+  {
+    title: "IBM Machine Learning Professional Certificate",
+    issuer: "IBM",
+    logo: "/logos/ibm-logo.png",
+    description: "Supervised and unsupervised learning, deep learning, and ML deployment with Python.",
+    skills: ["Scikit-Learn", "Hyperparameter Tuning", "Feature Engineering", "Model Deployment", "Convolutional Neural Networks (CNN)"],
+    link: "https://www.coursera.org/account/accomplishments/specialization/EJ81OBR4Y0DK",
+  },
+],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "University of Tehran",
+      degree: "MBA",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "Business-first mindset aligns data projects with strategic goals.",
+        "Cross-functional leadership bridges the gap between technical work and business stakeholders.",
+        "Financial modeling experience sharpens quantitative analysis and ROI thinking.",
       ],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
+      school: "University of Tehran",
+      degree: "Minor in Psychology",
       achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "Experimental design skills are the foundation for A/B testing and hypothesis-driven analysis.",
+        "Cognitive bias knowledge helps build more interpretable, user-centric models.",
+        "Psychometrics training improves handling of noisy data and feature engineering.",
+      ],
+    },
+    {
+      school: "University of Tehran",
+      degree: "Bachelor of Arts - BA, Spanish Language and Literature",
+      achievements: [
+        "Clear communication turns complex data into compelling stories for any audience.",
+        "Textual analysis skills directly transfer to mining unstructured data for patterns.",
+        "Cross-cultural competence makes collaboration in international teams seamless.",
       ],
     },
   ],

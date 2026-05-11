@@ -1,0 +1,93 @@
+---
+import { siteConfig } from "../config";
+const hasCertificates = siteConfig.certificates && siteConfig.certificates.length > 0;
+---
+
+{
+  hasCertificates && (
+    <section id="certificates" class="p-8 sm:p-12 md:p-16 lg:p-24">
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div class="lg:col-span-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+              Certificates
+            </h2>
+            <div
+              class="w-[75px] h-[5px] mt-2 rounded-full"
+              style={`background-color: ${siteConfig.accentColor}`}
+            />
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="relative">
+              {siteConfig.certificates.map((cert, index) => (
+                <div class="relative mb-12 last:mb-0">
+                  {/* Timeline dot at top of card */}
+                  <div
+                    class="absolute left-1/2 -top-2 w-4 h-4 bg-white border-2 rounded-full -translate-x-1/2 z-20 transition-all duration-300"
+                    style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`}
+                  />
+
+                  {/* Connecting line below card */}
+                  {index < siteConfig.certificates.length - 1 && (
+                    <div class="absolute left-1/2 bottom-0 w-0.5 h-12 bg-gray-300 -translate-x-1/2 translate-y-full z-10" />
+                  )}
+
+                  {/* Certificate card */}
+                  <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
+                    {/* Logo + Title + Issuer */}
+                    <div class="flex items-start gap-4 mb-4">
+                      <img
+                        src={cert.logo}
+                        alt={cert.issuer}
+                        class="w-12 h-12 object-contain rounded-lg flex-shrink-0"
+                        onerror="this.style.display='none'" 
+                      />
+                      <div class="flex-1">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
+                          {cert.title}
+                        </h3>
+                        <p
+                          class="text-base sm:text-lg"
+                          style={`color: ${siteConfig.accentColor}`}
+                        >
+                          {cert.issuer}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* One-line description */}
+                    <p class="text-sm sm:text-base text-gray-600 mb-4">
+                      {cert.description}
+                    </p>
+
+                    {/* Skills tags */}
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      {cert.skills.map((skill) => (
+                        <span class="inline-block bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded-full">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Link button */}
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-2 text-sm font-medium text-white px-4 py-2 rounded-md transition-colors duration-300"
+                      style={`background-color: ${siteConfig.accentColor}`}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      View Certificate
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
