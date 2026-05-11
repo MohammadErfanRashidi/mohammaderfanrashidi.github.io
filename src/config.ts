@@ -16,21 +16,21 @@ export const siteConfig = {
       name: "Bank Term Deposit Subscription Prediction",
       description:
         "Predicted term deposit subscriptions from bank marketing data using a Random Forest and deployed an interactive Streamlit web app.",
-      link: "https://aidevroundup.com/?ref=devportfolio",
+      link: "https://github.com/MohammadErfanRashidi/Bank-Marketing-Classification",
       skills: ["Classification", "Random-Forest", "Feature-Engineering", "GridSearchCV", "MLOps"],
     },
     {
       name: "Customer Segmentation with K-Means Clustering",
       description:
         "Segmented credit card customers into five behavioral clusters with K-Means and deployed a Streamlit app that classifies new customers and recommends business strategies.",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["Clustering", "K-means", "KPI", "EDA", "Web-application"],
+      link: "https://github.com/MohammadErfanRashidi/Credit-Card-Customer-Segmentation",
+      skills: ["Clustering", "K-Means", "KPI", "EDA", "Web-application"],
     },
     {
       name: "Life Expectancy Predictor",
       description:
         "Built a high‑accuracy Random Forest regressor to predict life expectancy from health and socioeconomic indicators, served via a FastAPI web app.",
-      link: "https://extensionkit.io/?ref=devportfolio",
+      link: "https://github.com/MohammadErfanRashidi/Life-Expectancy-",
       skills: ["Regression", "Random-Forest", "FastAPI", "SQL", "VIF"],
     },
   ],
