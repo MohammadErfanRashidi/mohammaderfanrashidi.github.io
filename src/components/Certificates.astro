@@ -44,7 +44,7 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
                         onerror="this.style.display='none'" 
                       />
                       <div class="flex-1">
-                        <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray-900">
                           {cert.title}
                         </h3>
                         <p
@@ -57,12 +57,14 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
                     </div>
 
                     {/* One-line description */}
-                    <p class="text-sm sm:text-base text-gray-600 mb-4">
+                    <p class="text-xs sm:text-sm md:text-base leading-relaxed text-gray-600 whitespace-pre-line"
+                      style="text-align: justify; hyphens: auto;"
+                    >
                       {cert.description}
                     </p>
 
                     {/* Skills tags */}
-                    <div class="flex flex-wrap gap-2 mb-4">
+                    <div class="flex flex-wrap gap-2 mt-4 mb-6">
                       {cert.skills.map((skill) => (
                         <span class="inline-block bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded-full">
                           {skill}
